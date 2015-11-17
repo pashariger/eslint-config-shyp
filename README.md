@@ -9,7 +9,7 @@ This is a living repository; feel free to propose changes via pull request.
 In your new project:
 
 ```
-$ npm install --save-dev eslint-config-shyp
+$ npm install --save-dev eslint eslint-config-shyp
 ```
 
 Then add an `.eslintrc`:
@@ -28,6 +28,15 @@ And overwrite rules as needed for your project:
     "quotes": [2, "double"]
   }
 }
+```
+
+Then lint at your leisure:
+```
+$ $(npm bin)/eslint .
+
+/file.js
+  1:1  error  Strings must use singlequote  quotes
+
 ```
 
 ## Guidelines
