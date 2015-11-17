@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config-shyp",
+  "version": "0.0.1",
+  "description": "An eslint configuration for Shyp projects",
+  "main": "index.js",
+  "author": "Shyp <engineering@shyp.com>",
+  "license": "MIT"
+}
