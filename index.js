@@ -84,18 +84,119 @@ const node = {
 
 
 const stylistic = {
+  // Avoid leading/trailing spaces in arrays
+  'array-bracket-spacing': 2,
+
+  // Use leading/trailing spaces within blocks
+  'block-spacing': 2,
+
   // Place opening braces on the same line as their declaration
   'brace-style': 2,
 
+  // Use camelCase variable naming
+  camelcase: 2,
+
+  // Use spaces after commas, not before
+  'comma-spacing': 2,
+
+  // Use commas are at the of the line, not the beginning
+  'comma-style': 2,
+
+  // Use a line terminator at the end of every file
+  'eol-last': 2,
+
+  // Two-space indentation, always
+  indent: [2, 2],
+
+  // Use whitespace after colons in object keys
+  'key-spacing': 2,
+
+  // Warn when `continue` is used
+  'no-continue': 1,
+
+  // Disallow `if` as the only statement in an `else` block
+  'no-lonely-if': 2,
+
+  // No mixing tabs and spaces
+  'no-mixed-spaces-and-tabs': 2,
+
+  // No spaces in function calls
+  'no-spaced-func': 2,
+
+  // No trailing spaces at the end of the line
+  'no-trailing-spaces': 2,
+
+  // Allow dangling underscores
+  'no-underscore-dangle': 0,
+
+  // Always use spaces inside of curly braces
+  'object-curly-spacing': 0,
+
+  // No combining `var` declarations
+  'no-var': [2, 'never'],
+
+  // No quotes around keys when unnecessary
+  'quote-props': [2, 'as-needed'],
+
   // Strings are single-quoted, unless doing so would require escaping
-  quotes: [2, 'single', 'avoid-escape']
+  quotes: [2, 'single', 'avoid-escape'],
 
+  // No spaces before semicolons; always spaces after
+  'semi-spacing': 2,
 
+  // Always use semicolons
+  semi: 2,
+
+  // Disallow space before function parentheses
+  'space-before-function-paren': [2, 'never'],
+
+  // Always use a space before keywords
+  'space-before-keywords': 2,
+
+  // Never use leading/trailing spaces in parentheses
+  'space-in-parens': 2,
+
+  // Use spaces around infix operators
+  'space-infix-ops': 2,
+
+  // Use spaces following certain keywords
+  'space-return-throw-case': 2,
+
+  // Use spaces following unary operators (e.g. `new`)
+  'space-unary-ops': 2,
 };
 
 
 const es6 = {
+  // Use spaces around arrows
+  'arrow-spacing': 2,
 
+  // Ensure `super()` is used in subclasses
+  'constructor-super': 2,
+
+  // Ensure the generator asterisk is after the space
+  'generator-star-spacing': 2,
+
+  // Do not overwrite class definitions
+  'no-class-assign': 2,
+
+  // Do not modify variables declared with `const`
+  'no-const-assign': 2,
+
+  // Don't duplicate class members
+  'no-dupe-class-members': 2,
+
+  // Don't refer to `this` before calling `super()` in constructors
+  'no-this-before-super': 2,
+
+  // Use `const` whenever a variable is not modified
+  'prefer-const': 2,
+
+  // Warn when `apply` is used where the spread operator could be
+  'prefer-spread': 1,
+
+  // Do not use `var`
+  'no-var': 2,
 };
 
 module.exports = {
