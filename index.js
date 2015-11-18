@@ -90,8 +90,8 @@ const stylistic = {
   // Use leading/trailing spaces within blocks
   'block-spacing': 2,
 
-  // Place opening braces on the same line as their declaration
-  'brace-style': 2,
+  // Use One True Brace Style, with single-line blocks allowed
+  'brace-style': [2, '1tbs', { allowSingleLine: true }],
 
   // Use camelCase variable naming
   camelcase: 2,
@@ -146,6 +146,9 @@ const stylistic = {
 
   // Always use semicolons
   semi: 2,
+
+  // Always use a space after keywords
+  'space-after-keywords': 2,
 
   // Disallow space before function parentheses
   'space-before-function-paren': [2, 'never'],
