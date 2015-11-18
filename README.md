@@ -12,15 +12,8 @@ In your new project:
 $ npm install --save-dev eslint eslint-config-shyp
 ```
 
-Then add an `.eslintrc`:
+Then add an `.eslintrc`, and overwrite rules as needed for your project:
 
-```
-{
-  "extends": "eslint-config-shyp"
-}
-```
-
-And overwrite rules as needed for your project:
 ```
 {
   "extends": "eslint-config-shyp",
@@ -30,13 +23,32 @@ And overwrite rules as needed for your project:
 }
 ```
 
-Then lint at your leisure:
+And lint at your leisure:
 ```
 $ $(npm bin)/eslint .
 
 /file.js
   1:1  error  Strings must use singlequote  quotes
 
+```
+
+## Usage with [Babel](https://babeljs.io/)
+
+We provide a build with additional rules for projects compiled with Babel,
+including rules for projects built on [React](https://facebook.github.io/react/).
+
+Install similar to above, with the addition of:
+
+```
+$ npm install --save-dev babel-eslint eslint-plugin-react
+```
+
+Then, in your `.eslintrc`:
+
+```
+{
+  "extends": "eslint-config-shyp/babel"
+}
 ```
 
 ## Guidelines
