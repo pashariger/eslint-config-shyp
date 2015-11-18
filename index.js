@@ -43,9 +43,6 @@ const bestPractices = {
   // No siblings of `eval` (e.g. `new Function('..')`)
   'no-implied-eval': 2,
 
-  // No usage of `this` outside of classes
-  'no-invalid-this': 2,
-
   // Warn when "magic numbers" are used
   'no-magic-numbers': 1,
 
@@ -54,6 +51,9 @@ const bestPractices = {
 
   // No reassigning native/builtin objects
   'no-native-reassign': 2,
+
+  // No unused expressions (e.g. `"Hello world";` )
+  'no-unused-expressions': 2,
 
   // No `with` statements
   'no-with': 2
