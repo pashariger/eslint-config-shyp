@@ -130,10 +130,10 @@ const stylistic = {
   'no-underscore-dangle': 0,
 
   // Always use spaces inside of curly braces
-  'object-curly-spacing': 0,
+  'object-curly-spacing': [2, 'always'],
 
   // No combining `var` declarations
-  'no-var': [2, 'never'],
+  'one-var': [2, 'never'],
 
   // No quotes around keys when unnecessary
   'quote-props': [2, 'as-needed'],
