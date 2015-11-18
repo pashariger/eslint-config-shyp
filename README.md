@@ -2,53 +2,54 @@
 
 An [eslint shareable config](http://eslint.org/docs/developer-guide/shareable-configs) for Shyp's web projects.
 
-This is a living repository; feel free to propose changes via pull request.
-
 ## Usage
 
-In your new project:
+Three configurations are currently provided:
 
+### eslint-config-shyp
+
+A baseline for linting ES2015+ projects.
+
+Install via:
 ```
 $ npm install --save-dev eslint eslint-config-shyp
 ```
 
-Then add an `.eslintrc`, and overwrite rules as needed for your project:
-
+Then in your `.eslintrc`:
 ```
 {
   "extends": "eslint-config-shyp",
-  "rules": {
-    "quotes": [2, "double"]
-  }
+  ... overwrite any rules as necessary ...
 }
 ```
 
-And lint at your leisure:
+### eslint-config-shyp/babel
+
+A configuration for projects using [Babel](https://babeljs.io). 
+
+Installation:
 ```
-$ $(npm bin)/eslint .
+$ npm install --save-dev eslint eslint-config-shyp babel-eslint
+``` 
 
-/file.js
-  1:1  error  Strings must use singlequote  quotes
-
+eslintrc:
 ```
-
-## Usage with [Babel](https://babeljs.io/)
-
-We provide a build with additional rules for projects compiled with Babel,
-including rules for projects built on [React](https://facebook.github.io/react/).
-
-Install similar to above, with the addition of:
-
-```
-$ npm install --save-dev babel-eslint eslint-plugin-react
+"extends": "eslint-config-shyp/babel"
 ```
 
-Then, in your `.eslintrc`:
+### eslint-config-shyp/react
 
+A configuration for projects using [React](https://facebook.github.io/react/).
+Also uses Babel as the parser.
+
+Installation:
 ```
-{
-  "extends": "eslint-config-shyp/babel"
-}
+$ npm install --save-dev eslint eslint-config-shyp babel-eslint eslint-plugin-react
+```
+
+eslintrc:
+```
+"extends": "eslint-config-shyp/react"
 ```
 
 ## Guidelines
