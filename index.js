@@ -53,7 +53,7 @@ const bestPractices = {
   'no-native-reassign': 2,
 
   // No unused expressions (e.g. `"Hello world";` )
-  'no-unused-expressions': 2,
+  'no-unused-expressions': [2, { allowShortCircuit: true, allowTernary: true }],
 
   // No `with` statements
   'no-with': 2
