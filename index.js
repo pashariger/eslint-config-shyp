@@ -10,8 +10,8 @@ const possibleErrors = {
 
 
 const bestPractices = {
-  // Never omit curly braces around blocks
-  curly: 2,
+  // Require curly braces around multi-line blocks
+  curly: [2, 'multi-line'],
 
   // Use dot notation wherever possible
   'dot-notation': 2,
@@ -28,6 +28,9 @@ const bestPractices = {
   // Do not use `eval`
   'no-eval': 2,
 
+  // Empty Block Statements
+  'no-empty': 1,
+
   // Do not extend native/builtin objects
   'no-extend-native': 2,
 
@@ -42,9 +45,6 @@ const bestPractices = {
 
   // No siblings of `eval` (e.g. `new Function('..')`)
   'no-implied-eval': 2,
-
-  // Warn when "magic numbers" are used
-  'no-magic-numbers': 1,
 
   // No multiple spaces (except indentation)
   'no-multi-spaces': 2,
@@ -106,7 +106,7 @@ const stylistic = {
   'eol-last': 2,
 
   // Two-space indentation, always
-  indent: [2, 2],
+  indent: [2, 2, {'SwitchCase': 1}],
 
   // Use whitespace after colons in object keys
   'key-spacing': 2,
