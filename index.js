@@ -106,7 +106,7 @@ const stylistic = {
   'eol-last': 2,
 
   // Two-space indentation, always
-  indent: [2, 2, {'SwitchCase': 1}],
+  indent: [2, 2, {SwitchCase: 1}],
 
   // Use whitespace after colons in object keys
   'key-spacing': 2,
