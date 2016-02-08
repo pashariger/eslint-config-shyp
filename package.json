@@ -4,5 +4,6 @@
   "description": "An eslint configuration for Shyp projects",
   "main": "index.js",
   "author": "Shyp <engineering@shyp.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
