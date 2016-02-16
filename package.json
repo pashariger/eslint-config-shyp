@@ -5,5 +5,9 @@
   "main": "index.js",
   "author": "Shyp <engineering@shyp.com>",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "eslint": "1.*",
+    "eslint-plugin-mocha": "1.*"
+  }
 }

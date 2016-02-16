@@ -202,6 +202,11 @@ const es6 = {
   'no-var': 2,
 };
 
+const cruft = {
+  // don't allow `.only` in tests
+  'mocha/no-exclusive-tests': 2
+};
+
 module.exports = {
   extends: ['eslint:recommended'],
 
@@ -212,5 +217,9 @@ module.exports = {
     es6: true,
   },
 
-  rules: Object.assign({}, possibleErrors, bestPractices, variables, stylistic, node, es6)
+  plugins: [
+    'mocha'
+  ],
+
+  rules: Object.assign({}, possibleErrors, bestPractices, variables, stylistic, node, es6, cruft)
 };
