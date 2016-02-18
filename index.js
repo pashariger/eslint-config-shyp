@@ -5,7 +5,7 @@ const possibleErrors = {
   'no-console': 1,
 
   // No multiline statements that look like separate statements
-  'no-unexpected-multiline': 2
+  'no-unexpected-multiline': 2,
 };
 
 
@@ -56,7 +56,7 @@ const bestPractices = {
   'no-unused-expressions': [2, { allowShortCircuit: true, allowTernary: true }],
 
   // No `with` statements
-  'no-with': 2
+  'no-with': 2,
 };
 
 
@@ -74,7 +74,7 @@ const variables = {
   'no-undef-init': 2,
 
   // No using variables before they're defined, except function declarations
-  'no-use-before-define': [2, 'nofunc']
+  'no-use-before-define': [2, 'nofunc'],
 };
 
 
@@ -167,6 +167,9 @@ const stylistic = {
 
   // Use spaces following unary operators (e.g. `new`)
   'space-unary-ops': 2,
+
+  // Require trailing/dangling commas on multi-line objects and arrays
+  'comma-dangle': [2, 'always-multiline'],
 };
 
 
@@ -204,7 +207,7 @@ const es6 = {
 
 const cruft = {
   // don't allow `.only` in tests
-  'mocha/no-exclusive-tests': 2
+  'mocha/no-exclusive-tests': 2,
 };
 
 module.exports = {
@@ -217,9 +220,7 @@ module.exports = {
     es6: true,
   },
 
-  plugins: [
-    'mocha'
-  ],
+  plugins: ['mocha'],
 
-  rules: Object.assign({}, possibleErrors, bestPractices, variables, stylistic, node, es6, cruft)
+  rules: Object.assign({}, possibleErrors, bestPractices, variables, stylistic, node, es6, cruft),
 };
