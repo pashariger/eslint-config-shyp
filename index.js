@@ -73,8 +73,8 @@ const variables = {
   // No initializing variables to `undefined
   'no-undef-init': 2,
 
-  // No using variables before they're defined
-  'no-use-before-define': 2
+  // No using variables before they're defined, except function declarations
+  'no-use-before-define': [2, 'nofunc']
 };
 
 
