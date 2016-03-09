@@ -7,7 +7,7 @@ const rules = Object.assign({}, babel.rules, {
   'jsx-quotes': [2, 'prefer-single'],
 
   'react/jsx-sort-props': 2,
-  'react/jsx-boolean-value': 2,
+  'react/jsx-boolean-value': 0,
   'react/jsx-no-undef': 2,
   'react/jsx-sort-prop-types': 2,
   'react/jsx-sort-props': 2,
