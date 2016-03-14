@@ -2,6 +2,18 @@
 
 An [eslint shareable config](http://eslint.org/docs/developer-guide/shareable-configs) for Shyp's web projects.
 
+## Contributing
+
+- All changes and proposals should be made in a pull request against this repo.
+  Tag the `@shyp/web` team for discussion and do not merge changes without
+  making sure everyone's in the loop - any updates here impact many projects.
+- In general, we're very unlikely to add or modify rules in a way that
+  contradicts earlier rules. Changes are generally to enforce something we've
+  decided to avoid, or loosen a restriction that we've found an edge case for.
+  The style prescribed here **may not match your personal preferences**, but
+  we're aiming for consistency and codifying patterns that we already use, so
+  unfortunately not everyone's tastes will match this at all times.
+
 ## Usage
 
 Three configurations are currently provided:
@@ -51,12 +63,3 @@ eslintrc:
 ```
 "extends": "eslint-config-shyp/react"
 ```
-
-## Guidelines
-
-- The default configuration is fairly prescriptive. You can overwrite this with
-  rules that work for your projects, but if you find yourself disabling or
-  changing a specific rule often, let's talk about it! The goal is to strike a
-  balance between consistency and bikeshedding.
-- When contributing new rules to this project, make sure there's a short comment
-  explaining what this is enforcing (or not enforcing).
