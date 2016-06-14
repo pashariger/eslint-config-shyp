@@ -1,8 +1,8 @@
 // Rules are grouped by the same sections as http://eslint.org/docs/rules/
 
 const possibleErrors = {
-  // Warn when `console` is used
-  'no-console': 1,
+  // Disallow the use of `console`
+  'no-console': 2,
 
   // No multiline statements that look like separate statements
   'no-unexpected-multiline': 2
@@ -29,7 +29,7 @@ const bestPractices = {
   'no-eval': 2,
 
   // Empty Block Statements
-  'no-empty': 1,
+  'no-empty': 2,
 
   // Do not extend native/builtin objects
   'no-extend-native': 2,
@@ -111,8 +111,8 @@ const stylistic = {
   // Use whitespace after colons in object keys
   'key-spacing': 2,
 
-  // Warn when `continue` is used
-  'no-continue': 1,
+  // Disallow `continue`
+  'no-continue': 2,
 
   // Disallow `if` as the only statement in an `else` block
   'no-lonely-if': 2,
@@ -177,6 +177,9 @@ const es6 = {
   // Use spaces around arrows
   'arrow-spacing': 2,
 
+  // Require parentheses around arrow-function arguments
+  'arrow-parens': 2,
+
   // Ensure `super()` is used in subclasses
   'constructor-super': 2,
 
@@ -198,8 +201,8 @@ const es6 = {
   // Use `const` whenever a variable is not modified
   'prefer-const': 2,
 
-  // Warn when `apply` is used where the spread operator could be
-  'prefer-spread': 1,
+  // Don't use `apply` where the spread operator could be used instead
+  'prefer-spread': 2,
 
   // Do not use `var`
   'no-var': 2
