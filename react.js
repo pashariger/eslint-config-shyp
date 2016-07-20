@@ -11,7 +11,6 @@ const rules = Object.assign({}, babel.rules, {
   'react/jsx-indent-props': [2, 2],
   'react/jsx-no-duplicate-props': 2,
   'react/jsx-no-undef': 2,
-  'react/jsx-sort-prop-types': 2,
   'react/jsx-sort-props': 2,
   'react/jsx-space-before-closing': 2,
   'react/jsx-uses-react': 2,
@@ -24,6 +23,7 @@ const rules = Object.assign({}, babel.rules, {
   'react/react-in-jsx-scope': 2,
   'react/self-closing-comp': 2,
   'react/sort-comp': [2, { order: [ 'static-methods', 'lifecycle', 'everything-else' ]}],
+  'react/sort-prop-types': 2,
   'react/wrap-multilines': 2
 });
 
