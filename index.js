@@ -4,6 +4,9 @@ const possibleErrors = {
   // Disallow the use of `console`
   'no-console': 2,
 
+  // Ensure objects do not contain duplicate keys
+  'no-dupe-keys': 2,
+
   // No multiline statements that look like separate statements
   'no-unexpected-multiline': 2
 };
@@ -37,6 +40,9 @@ const bestPractices = {
   // Do not use `bind` unnecessarily
   'no-extra-bind': 2,
 
+  // Allow the use of fallthrough in switch statements
+  'no-fallthrough': 0,
+
   // No leading or trailing decimal points in numeric literals
   'no-floating-decimal': 2,
 
@@ -57,6 +63,11 @@ const bestPractices = {
 
   // No `with` statements
   'no-with': 2
+};
+
+
+const strict = {
+  strict: [2, 'global']
 };
 
 
@@ -198,6 +209,9 @@ const es6 = {
   // Don't refer to `this` before calling `super()` in constructors
   'no-this-before-super': 2,
 
+  // Always use object shorthand whevener possible
+  'object-shorthand': [2, 'always'],
+
   // Use `const` whenever a variable is not modified
   'prefer-const': 2,
 
@@ -227,5 +241,5 @@ module.exports = {
     'mocha'
   ],
 
-  rules: Object.assign({}, possibleErrors, bestPractices, variables, stylistic, node, es6, cruft)
+  rules: Object.assign({}, possibleErrors, bestPractices, strict, variables, stylistic, node, es6, cruft)
 };
