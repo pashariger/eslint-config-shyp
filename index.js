@@ -61,6 +61,9 @@ const bestPractices = {
   // No unused expressions (e.g. `"Hello world";` )
   'no-unused-expressions': [2, { allowShortCircuit: true, allowTernary: true }],
 
+  //  Disallow unnecessary constructor (e.g. `contructor(){  })` )
+  'no-useless-constructor': 2,
+
   // No `with` statements
   'no-with': 2
 };
